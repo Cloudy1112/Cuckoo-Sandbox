@@ -1,0 +1,175 @@
+{"status": "success", "task_id": null, "level": "info", "asctime": "2026-03-26 00:23:03,433", "machinery": "virtualbox", "time": 1774459383.433573, "action": "init.machinery", "message": "Using \"virtualbox\" as machine manager"}
+{"status": "success", "count": 1, "task_id": null, "level": "info", "asctime": "2026-03-26 00:23:03,773", "time": 1774459383.77356, "action": "init.machines", "message": "Loaded 1 machine/s"}
+{"status": "starting", "category": "file", "package": "exe", "target": "e9d3a58d421ecd9c8c57f7220c4ee420e52bf449194d35b367aa45c863bd0f66.exe", "task_id": 1, "level": "info", "asctime": "2026-03-26 00:24:32,743", "custom": null, "time": 1774459472.743658, "action": "task.init", "message": "Starting analysis of FILE \"e9d3a58d421ecd9c8c57f7220c4ee420e52bf449194d35b367aa45c863bd0f66.exe\" (task #1, options \"procmemdump=yes,route=none\")", "options": "procmemdump=yes,route=none"}
+{"status": "success", "task_id": 1, "level": "info", "asctime": "2026-03-26 00:24:32,778", "time": 1774459472.778671, "action": "vm.acquire", "message": "Task #1: acquired machine cuckoo1 (label=cuckoo1)", "vmname": "cuckoo1"}
+{"status": "pending", "task_id": 1, "level": "info", "asctime": "2026-03-26 00:24:32,820", "time": 1774459472.820736, "action": "vm.start", "message": "Starting VM", "vmname": "cuckoo1"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:33,753", "time": 1774459473.753249, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:34,761", "time": 1774459474.761372, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "success", "task_id": 1, "level": "info", "asctime": "2026-03-26 00:24:35,692", "time": 1774459475.692836, "action": "vm.start", "message": "Started VM", "vmname": "cuckoo1"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:35,767", "time": 1774459475.767363, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:36,775", "time": 1774459476.77589, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:37,785", "time": 1774459477.785251, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:38,793", "time": 1774459478.793359, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:39,802", "time": 1774459479.802531, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:40,809", "time": 1774459480.809648, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:41,821", "time": 1774459481.821479, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:42,830", "time": 1774459482.830425, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:43,838", "time": 1774459483.838607, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:44,844", "time": 1774459484.8441, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:45,853", "time": 1774459485.853139, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:46,860", "time": 1774459486.860633, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:47,868", "time": 1774459487.868861, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:48,876", "time": 1774459488.8768, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:49,885", "time": 1774459489.885261, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:50,893", "time": 1774459490.893066, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:51,901", "time": 1774459491.901458, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:52,910", "time": 1774459492.910112, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:53,918", "time": 1774459493.918119, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:54,926", "time": 1774459494.926693, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:55,934", "time": 1774459495.934221, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:56,942", "time": 1774459496.942336, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:57,950", "time": 1774459497.950219, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:58,958", "time": 1774459498.958287, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:24:59,969", "time": 1774459499.9691, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:00,977", "time": 1774459500.977827, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:01,988", "time": 1774459501.988247, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:02,995", "time": 1774459502.99552, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:04,003", "time": 1774459504.003471, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:05,012", "time": 1774459505.012803, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:06,021", "time": 1774459506.021026, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:07,029", "time": 1774459507.02979, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:08,037", "time": 1774459508.037401, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:09,046", "time": 1774459509.046546, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:10,053", "time": 1774459510.053921, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:11,060", "time": 1774459511.060042, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:12,070", "time": 1774459512.070468, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:13,077", "time": 1774459513.077923, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:14,086", "time": 1774459514.086418, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:15,094", "time": 1774459515.09428, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:16,102", "time": 1774459516.10287, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:17,110", "time": 1774459517.110982, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:18,118", "time": 1774459518.118261, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:19,126", "time": 1774459519.126551, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:20,134", "time": 1774459520.134602, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:21,143", "time": 1774459521.143985, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:22,152", "time": 1774459522.15226, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:23,162", "time": 1774459523.162843, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:24,169", "time": 1774459524.169784, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:25,175", "time": 1774459525.175494, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:26,183", "time": 1774459526.183749, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:27,191", "time": 1774459527.191106, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:28,199", "time": 1774459528.199555, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:29,207", "time": 1774459529.207501, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:30,214", "time": 1774459530.214784, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:31,223", "time": 1774459531.223521, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:32,231", "time": 1774459532.231973, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:33,239", "time": 1774459533.239904, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:34,248", "time": 1774459534.248704, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:35,257", "time": 1774459535.257164, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:36,264", "time": 1774459536.264729, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:37,272", "time": 1774459537.272459, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:38,280", "time": 1774459538.280833, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:39,288", "time": 1774459539.288929, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:40,298", "time": 1774459540.298082, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:41,306", "time": 1774459541.306259, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:42,318", "time": 1774459542.318106, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:43,326", "time": 1774459543.326935, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:44,334", "time": 1774459544.334197, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:45,342", "time": 1774459545.34262, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:46,351", "time": 1774459546.351227, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:47,362", "time": 1774459547.362255, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:48,370", "time": 1774459548.370654, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:49,379", "time": 1774459549.379671, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:50,387", "time": 1774459550.387612, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:51,395", "time": 1774459551.395601, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:52,404", "time": 1774459552.404133, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:53,412", "time": 1774459553.412374, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:54,421", "time": 1774459554.421172, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:55,430", "time": 1774459555.430753, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:56,438", "time": 1774459556.438782, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:57,446", "time": 1774459557.446168, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:58,454", "time": 1774459558.454005, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:25:59,462", "time": 1774459559.46257, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:00,470", "time": 1774459560.47006, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:01,479", "time": 1774459561.479411, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:02,487", "time": 1774459562.487988, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:03,496", "time": 1774459563.496602, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:04,505", "time": 1774459564.505091, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:05,511", "time": 1774459565.511038, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:06,566", "time": 1774459566.566452, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:07,573", "time": 1774459567.57399, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:08,581", "time": 1774459568.581878, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:09,590", "time": 1774459569.590808, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:10,598", "time": 1774459570.5988, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:11,607", "time": 1774459571.607595, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:12,615", "time": 1774459572.615339, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:13,623", "time": 1774459573.623803, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:14,632", "time": 1774459574.632252, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:15,640", "time": 1774459575.640362, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:16,650", "time": 1774459576.650202, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:17,658", "time": 1774459577.658017, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:18,666", "time": 1774459578.66684, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:19,674", "time": 1774459579.674648, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:20,682", "time": 1774459580.682489, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:21,690", "time": 1774459581.690748, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:22,698", "time": 1774459582.698989, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:23,705", "time": 1774459583.705737, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:24,714", "time": 1774459584.714199, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:25,722", "time": 1774459585.722575, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:26,734", "time": 1774459586.734079, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:27,742", "time": 1774459587.742316, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:28,749", "time": 1774459588.749694, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:29,758", "time": 1774459589.758048, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:30,765", "time": 1774459590.765343, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:31,774", "time": 1774459591.774254, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:32,782", "time": 1774459592.782035, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:33,789", "time": 1774459593.789887, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:34,796", "time": 1774459594.796201, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:35,802", "time": 1774459595.802143, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:36,810", "time": 1774459596.810369, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:37,819", "time": 1774459597.81903, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:38,826", "time": 1774459598.826626, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:39,834", "time": 1774459599.83471, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:40,839", "time": 1774459600.839931, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "pending", "task_id": 1, "level": "info", "asctime": "2026-03-26 00:26:41,236", "time": 1774459601.236474, "action": "vm.memdump", "message": "Taking full memory dump", "vmname": "cuckoo1"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:41,851", "time": 1774459601.851632, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:42,859", "time": 1774459602.859591, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:43,867", "time": 1774459603.867925, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:44,875", "time": 1774459604.87533, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:45,882", "time": 1774459605.882607, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:46,888", "time": 1774459606.88859, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:47,896", "time": 1774459607.896712, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "success", "task_id": 1, "level": "info", "asctime": "2026-03-26 00:26:47,947", "time": 1774459607.947245, "action": "vm.memdump", "message": "Taken full memory dump", "vmname": "cuckoo1"}
+{"status": "pending", "task_id": 1, "level": "info", "asctime": "2026-03-26 00:26:47,947", "time": 1774459607.947525, "action": "vm.stop", "message": "Stopping VM", "vmname": "cuckoo1"}
+{"status": "none", "task_id": null, "level": "info", "asctime": "2026-03-26 00:26:48,902", "time": 1774459608.902668, "action": "scheduler.machines", "message": "No available machines"}
+{"status": "success", "task_id": 1, "level": "info", "asctime": "2026-03-26 00:26:49,158", "time": 1774459609.158671, "action": "vm.stop", "message": "Stopped VM", "vmname": "cuckoo1"}
+{"status": "pending", "task_id": 1, "level": "info", "asctime": "2026-03-26 00:26:49,198", "time": 1774459609.198928, "action": "task.report", "message": "Starting task reporting"}
+{"status": "success", "severity": 2, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,869", "signature": "dumped_buffer", "time": 1774459614.869398, "action": "signature.match", "message": "Analysis matched signature: dumped_buffer"}
+{"status": "success", "severity": 3, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,872", "signature": "dumped_buffer2", "time": 1774459614.872425, "action": "signature.match", "message": "Analysis matched signature: dumped_buffer2"}
+{"status": "success", "severity": 2, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,872", "signature": "networkdyndns_checkip", "time": 1774459614.872609, "action": "signature.match", "message": "Analysis matched signature: networkdyndns_checkip"}
+{"status": "success", "severity": 3, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,872", "signature": "allocates_execute_remote_process", "time": 1774459614.872781, "action": "signature.match", "message": "Analysis matched signature: allocates_execute_remote_process"}
+{"status": "success", "severity": 2, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,872", "signature": "allocates_rwx", "time": 1774459614.872939, "action": "signature.match", "message": "Analysis matched signature: allocates_rwx"}
+{"status": "success", "severity": 2, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,873", "signature": "antisandbox_sleep", "time": 1774459614.87311, "action": "signature.match", "message": "Analysis matched signature: antisandbox_sleep"}
+{"status": "success", "severity": 1, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,873", "signature": "antivm_queries_computername", "time": 1774459614.873263, "action": "signature.match", "message": "Analysis matched signature: antivm_queries_computername"}
+{"status": "success", "severity": 3, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,873", "signature": "antivm_generic_cpu", "time": 1774459614.873411, "action": "signature.match", "message": "Analysis matched signature: antivm_generic_cpu"}
+{"status": "success", "severity": 3, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,873", "signature": "persistence_autorun", "time": 1774459614.873578, "action": "signature.match", "message": "Analysis matched signature: persistence_autorun"}
+{"status": "success", "severity": 1, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,873", "signature": "console_output", "time": 1774459614.873793, "action": "signature.match", "message": "Analysis matched signature: console_output"}
+{"status": "success", "severity": 2, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,873", "signature": "exe_appdata", "time": 1774459614.873989, "action": "signature.match", "message": "Analysis matched signature: exe_appdata"}
+{"status": "success", "severity": 1, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,874", "signature": "recon_fingerprint", "time": 1774459614.874146, "action": "signature.match", "message": "Analysis matched signature: recon_fingerprint"}
+{"status": "success", "severity": 3, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,874", "signature": "rat_fynloski", "time": 1774459614.874298, "action": "signature.match", "message": "Analysis matched signature: rat_fynloski"}
+{"status": "success", "severity": 2, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,874", "signature": "stealth_window", "time": 1774459614.874449, "action": "signature.match", "message": "Analysis matched signature: stealth_window"}
+{"status": "success", "severity": 5, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,874", "signature": "injection_runpe", "time": 1774459614.874605, "action": "signature.match", "message": "Analysis matched signature: injection_runpe"}
+{"status": "success", "severity": 3, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,874", "signature": "infostealer_keylogger", "time": 1774459614.874766, "action": "signature.match", "message": "Analysis matched signature: infostealer_keylogger"}
+{"status": "success", "severity": 1, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,874", "signature": "antivm_memory_available", "time": 1774459614.874921, "action": "signature.match", "message": "Analysis matched signature: antivm_memory_available"}
+{"status": "success", "severity": 2, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,875", "signature": "protection_rx", "time": 1774459614.875069, "action": "signature.match", "message": "Analysis matched signature: protection_rx"}
+{"status": "success", "severity": 3, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,875", "signature": "injection_ntsetcontextthread", "time": 1774459614.875226, "action": "signature.match", "message": "Analysis matched signature: injection_ntsetcontextthread"}
+{"status": "success", "severity": 2, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,875", "signature": "packer_entropy", "time": 1774459614.875382, "action": "signature.match", "message": "Analysis matched signature: packer_entropy"}
+{"status": "success", "severity": 2, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,875", "signature": "privilege_luid_check", "time": 1774459614.875559, "action": "signature.match", "message": "Analysis matched signature: privilege_luid_check"}
+{"status": "success", "severity": 3, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,875", "signature": "memdump_ip_urls", "time": 1774459614.875716, "action": "signature.match", "message": "Analysis matched signature: memdump_ip_urls"}
+{"status": "success", "severity": 2, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,875", "signature": "memdump_urls", "time": 1774459614.875863, "action": "signature.match", "message": "Analysis matched signature: memdump_urls"}
+{"status": "success", "severity": 1, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,876", "signature": "raises_exception", "time": 1774459614.876084, "action": "signature.match", "message": "Analysis matched signature: raises_exception"}
+{"status": "success", "severity": 3, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,876", "signature": "injection_resumethread", "time": 1774459614.876266, "action": "signature.match", "message": "Analysis matched signature: injection_resumethread"}
+{"status": "success", "severity": 2, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,876", "signature": "packer_upx", "time": 1774459614.876443, "action": "signature.match", "message": "Analysis matched signature: packer_upx"}
+{"status": "success", "severity": 2, "task_id": 1, "level": "debug", "asctime": "2026-03-26 00:26:54,876", "signature": "uses_windows_utilities", "time": 1774459614.876598, "action": "signature.match", "message": "Analysis matched signature: uses_windows_utilities"}
+{"status": "success", "task_id": 1, "level": "info", "asctime": "2026-03-26 00:26:56,206", "time": 1774459616.206877, "action": "task.report", "message": "Task #1: reports generation completed"}
+{"status": "success", "task_id": 1, "level": "info", "asctime": "2026-03-26 00:26:56,213", "time": 1774459616.213265, "action": "task.stop", "message": "Task #1: analysis procedure completed"}

@@ -1,0 +1,770 @@
+2026-03-26 00:23:03,077 [cuckoo.core.database] DEBUG: Using database-wide lock for sqlite
+2026-03-26 00:23:03,305 [cuckoo.core.startup] DEBUG: Imported modules...
+2026-03-26 00:23:03,342 [cuckoo.core.startup] DEBUG: Imported "auxiliary" modules:
+2026-03-26 00:23:03,343 [cuckoo.core.startup] DEBUG: 	 |-- MITM
+2026-03-26 00:23:03,343 [cuckoo.core.startup] DEBUG: 	 |-- Reboot
+2026-03-26 00:23:03,343 [cuckoo.core.startup] DEBUG: 	 |-- Replay
+2026-03-26 00:23:03,344 [cuckoo.core.startup] DEBUG: 	 |-- Services
+2026-03-26 00:23:03,344 [cuckoo.core.startup] DEBUG: 	 `-- Sniffer
+2026-03-26 00:23:03,344 [cuckoo.core.startup] DEBUG: Imported "machinery" modules:
+2026-03-26 00:23:03,344 [cuckoo.core.startup] DEBUG: 	 |-- vSphere
+2026-03-26 00:23:03,345 [cuckoo.core.startup] DEBUG: 	 |-- KVM
+2026-03-26 00:23:03,345 [cuckoo.core.startup] DEBUG: 	 |-- ESX
+2026-03-26 00:23:03,345 [cuckoo.core.startup] DEBUG: 	 |-- XenServer
+2026-03-26 00:23:03,346 [cuckoo.core.startup] DEBUG: 	 |-- VirtualBox
+2026-03-26 00:23:03,346 [cuckoo.core.startup] DEBUG: 	 |-- Avd
+2026-03-26 00:23:03,346 [cuckoo.core.startup] DEBUG: 	 |-- QEMU
+2026-03-26 00:23:03,346 [cuckoo.core.startup] DEBUG: 	 |-- VMware
+2026-03-26 00:23:03,347 [cuckoo.core.startup] DEBUG: 	 `-- Physical
+2026-03-26 00:23:03,347 [cuckoo.core.startup] DEBUG: Imported "processing" modules:
+2026-03-26 00:23:03,347 [cuckoo.core.startup] DEBUG: 	 |-- AnalysisInfo
+2026-03-26 00:23:03,347 [cuckoo.core.startup] DEBUG: 	 |-- ApkInfo
+2026-03-26 00:23:03,348 [cuckoo.core.startup] DEBUG: 	 |-- Baseline
+2026-03-26 00:23:03,348 [cuckoo.core.startup] DEBUG: 	 |-- BehaviorAnalysis
+2026-03-26 00:23:03,348 [cuckoo.core.startup] DEBUG: 	 |-- Debug
+2026-03-26 00:23:03,348 [cuckoo.core.startup] DEBUG: 	 |-- Droidmon
+2026-03-26 00:23:03,349 [cuckoo.core.startup] DEBUG: 	 |-- Dropped
+2026-03-26 00:23:03,349 [cuckoo.core.startup] DEBUG: 	 |-- DroppedBuffer
+2026-03-26 00:23:03,349 [cuckoo.core.startup] DEBUG: 	 |-- Extracted
+2026-03-26 00:23:03,350 [cuckoo.core.startup] DEBUG: 	 |-- GooglePlay
+2026-03-26 00:23:03,350 [cuckoo.core.startup] DEBUG: 	 |-- Irma
+2026-03-26 00:23:03,350 [cuckoo.core.startup] DEBUG: 	 |-- Memory
+2026-03-26 00:23:03,350 [cuckoo.core.startup] DEBUG: 	 |-- MetaInfo
+2026-03-26 00:23:03,351 [cuckoo.core.startup] DEBUG: 	 |-- MISP
+2026-03-26 00:23:03,351 [cuckoo.core.startup] DEBUG: 	 |-- NetworkAnalysis
+2026-03-26 00:23:03,351 [cuckoo.core.startup] DEBUG: 	 |-- ProcessMemory
+2026-03-26 00:23:03,351 [cuckoo.core.startup] DEBUG: 	 |-- Procmon
+2026-03-26 00:23:03,352 [cuckoo.core.startup] DEBUG: 	 |-- Screenshots
+2026-03-26 00:23:03,352 [cuckoo.core.startup] DEBUG: 	 |-- Snort
+2026-03-26 00:23:03,352 [cuckoo.core.startup] DEBUG: 	 |-- Static
+2026-03-26 00:23:03,352 [cuckoo.core.startup] DEBUG: 	 |-- Strings
+2026-03-26 00:23:03,352 [cuckoo.core.startup] DEBUG: 	 |-- Suricata
+2026-03-26 00:23:03,352 [cuckoo.core.startup] DEBUG: 	 |-- TargetInfo
+2026-03-26 00:23:03,352 [cuckoo.core.startup] DEBUG: 	 |-- TLSMasterSecrets
+2026-03-26 00:23:03,353 [cuckoo.core.startup] DEBUG: 	 `-- VirusTotal
+2026-03-26 00:23:03,353 [cuckoo.core.startup] DEBUG: Imported "signatures" modules:
+2026-03-26 00:23:03,353 [cuckoo.core.startup] DEBUG: 	 |-- AndroidAbortBroadcast
+2026-03-26 00:23:03,353 [cuckoo.core.startup] DEBUG: 	 |-- AndroidAccountInfo
+2026-03-26 00:23:03,353 [cuckoo.core.startup] DEBUG: 	 |-- AndroidAppInfo
+2026-03-26 00:23:03,353 [cuckoo.core.startup] DEBUG: 	 |-- AndroidAudio
+2026-03-26 00:23:03,353 [cuckoo.core.startup] DEBUG: 	 |-- AndroidCamera
+2026-03-26 00:23:03,353 [cuckoo.core.startup] DEBUG: 	 |-- AndroidDangerousPermissions
+2026-03-26 00:23:03,353 [cuckoo.core.startup] DEBUG: 	 |-- AndroidDeletedApp
+2026-03-26 00:23:03,354 [cuckoo.core.startup] DEBUG: 	 |-- AndroidDynamicCode
+2026-03-26 00:23:03,354 [cuckoo.core.startup] DEBUG: 	 |-- AndroidEmbeddedApk
+2026-03-26 00:23:03,354 [cuckoo.core.startup] DEBUG: 	 |-- AndroidGooglePlayDiff
+2026-03-26 00:23:03,354 [cuckoo.core.startup] DEBUG: 	 |-- AndroidInstalledApps
+2026-03-26 00:23:03,354 [cuckoo.core.startup] DEBUG: 	 |-- AndroidNativeCode
+2026-03-26 00:23:03,354 [cuckoo.core.startup] DEBUG: 	 |-- AndroidPhoneNumber
+2026-03-26 00:23:03,354 [cuckoo.core.startup] DEBUG: 	 |-- AndroidPrivateInfoQuery
+2026-03-26 00:23:03,354 [cuckoo.core.startup] DEBUG: 	 |-- AndroidReflectionCode
+2026-03-26 00:23:03,354 [cuckoo.core.startup] DEBUG: 	 |-- AndroidRegisteredReceiver
+2026-03-26 00:23:03,354 [cuckoo.core.startup] DEBUG: 	 |-- AndroidShellCommands
+2026-03-26 00:23:03,354 [cuckoo.core.startup] DEBUG: 	 |-- AndroidSMS
+2026-03-26 00:23:03,355 [cuckoo.core.startup] DEBUG: 	 |-- AndroidStopProcess
+2026-03-26 00:23:03,355 [cuckoo.core.startup] DEBUG: 	 |-- ApplicationUsesLocation
+2026-03-26 00:23:03,355 [cuckoo.core.startup] DEBUG: 	 |-- KnownVirustotal
+2026-03-26 00:23:03,355 [cuckoo.core.startup] DEBUG: 	 |-- AntiAnalysisJavascript
+2026-03-26 00:23:03,355 [cuckoo.core.startup] DEBUG: 	 |-- DumpedBuffer
+2026-03-26 00:23:03,355 [cuckoo.core.startup] DEBUG: 	 |-- DumpedBuffer2
+2026-03-26 00:23:03,355 [cuckoo.core.startup] DEBUG: 	 |-- EncryptionKeys
+2026-03-26 00:23:03,355 [cuckoo.core.startup] DEBUG: 	 |-- EvalJS
+2026-03-26 00:23:03,355 [cuckoo.core.startup] DEBUG: 	 |-- HtmlFlash
+2026-03-26 00:23:03,355 [cuckoo.core.startup] DEBUG: 	 |-- JsIframe
+2026-03-26 00:23:03,355 [cuckoo.core.startup] DEBUG: 	 |-- PDFAttachments
+2026-03-26 00:23:03,355 [cuckoo.core.startup] DEBUG: 	 |-- PDFJavaScript
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- PDFOpenAction
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- PDFOpenActionJS
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- SuspiciousJavascript
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- DarwinCodeInjection
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- TaskForPid
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- DeadHost
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- NetworkBIND
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- NetworkCnCHTTP
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- NetworkDNSTXTLookup
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- NetworkDynDNS
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- NetworkHTTP
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- NetworkHTTPPOST
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- NetworkICMP
+2026-03-26 00:23:03,356 [cuckoo.core.startup] DEBUG: 	 |-- NetworkIRC
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- NetworkSMTP
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- NoLookupCommunication
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- P2PCnC
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- SnortAlert
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- SuricataAlert
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- Suspicious_TLD
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- TorGateway
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- WscriptDownloader
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- AddsUser
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- AddsUserAdmin
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- ADS
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- Adzok
+2026-03-26 00:23:03,357 [cuckoo.core.startup] DEBUG: 	 |-- AlinaFile
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- AlineURL
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- AllocatesExecuteRemoteProccess
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- AllocatesRWX
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- AmsiBypass
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- Andromeda
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- AntiAnalysisDetectFile
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- AntiAVDetectFile
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- AntiAVDetectReg
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- AntiAVServiceStop
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- AntiAVSRP
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- AntiDBGDevices
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- AntiDBGWindows
+2026-03-26 00:23:03,358 [cuckoo.core.startup] DEBUG: 	 |-- AntisandboxClipboard
+2026-03-26 00:23:03,359 [cuckoo.core.startup] DEBUG: 	 |-- AntiSandboxFile
+2026-03-26 00:23:03,359 [cuckoo.core.startup] DEBUG: 	 |-- AntiSandboxForegroundWindow
+2026-03-26 00:23:03,359 [cuckoo.core.startup] DEBUG: 	 |-- AntiSandboxIdleTime
+2026-03-26 00:23:03,359 [cuckoo.core.startup] DEBUG: 	 |-- AntiSandboxRestart
+2026-03-26 00:23:03,359 [cuckoo.core.startup] DEBUG: 	 |-- AntiSandboxSleep
+2026-03-26 00:23:03,359 [cuckoo.core.startup] DEBUG: 	 |-- AntiVirusIRMA
+2026-03-26 00:23:03,359 [cuckoo.core.startup] DEBUG: 	 |-- AntiVMBios
+2026-03-26 00:23:03,359 [cuckoo.core.startup] DEBUG: 	 |-- AntiVMComputernameQuery
+2026-03-26 00:23:03,359 [cuckoo.core.startup] DEBUG: 	 |-- AntiVMCPU
+2026-03-26 00:23:03,359 [cuckoo.core.startup] DEBUG: 	 |-- AntiVMDiskSize
+2026-03-26 00:23:03,359 [cuckoo.core.startup] DEBUG: 	 |-- AntiVMIDE
+2026-03-26 00:23:03,360 [cuckoo.core.startup] DEBUG: 	 |-- AntiVMSCSI
+2026-03-26 00:23:03,360 [cuckoo.core.startup] DEBUG: 	 |-- AntiVMServices
+2026-03-26 00:23:03,360 [cuckoo.core.startup] DEBUG: 	 |-- AntiVMSharedDevice
+2026-03-26 00:23:03,360 [cuckoo.core.startup] DEBUG: 	 |-- ApplicationExceptionCrash
+2026-03-26 00:23:03,360 [cuckoo.core.startup] DEBUG: 	 |-- AppLockerBypass
+2026-03-26 00:23:03,360 [cuckoo.core.startup] DEBUG: 	 |-- APT_Carbunak
+2026-03-26 00:23:03,360 [cuckoo.core.startup] DEBUG: 	 |-- APT_CloudAtlas
+2026-03-26 00:23:03,360 [cuckoo.core.startup] DEBUG: 	 |-- apt_sandworm_ip
+2026-03-26 00:23:03,360 [cuckoo.core.startup] DEBUG: 	 |-- apt_sandworm_url
+2026-03-26 00:23:03,360 [cuckoo.core.startup] DEBUG: 	 |-- ArdamaxMutexes
+2026-03-26 00:23:03,360 [cuckoo.core.startup] DEBUG: 	 |-- AthenaHttp
+2026-03-26 00:23:03,360 [cuckoo.core.startup] DEBUG: 	 |-- AthenaURL
+2026-03-26 00:23:03,361 [cuckoo.core.startup] DEBUG: 	 |-- Autorun
+2026-03-26 00:23:03,361 [cuckoo.core.startup] DEBUG: 	 |-- AvastDetectLibs
+2026-03-26 00:23:03,361 [cuckoo.core.startup] DEBUG: 	 |-- AVDetectionChinaKey
+2026-03-26 00:23:03,361 [cuckoo.core.startup] DEBUG: 	 |-- BadCerts
+2026-03-26 00:23:03,361 [cuckoo.core.startup] DEBUG: 	 |-- Bagle
+2026-03-26 00:23:03,361 [cuckoo.core.startup] DEBUG: 	 |-- Bandook
+2026-03-26 00:23:03,361 [cuckoo.core.startup] DEBUG: 	 |-- banker_bancos
+2026-03-26 00:23:03,361 [cuckoo.core.startup] DEBUG: 	 |-- BankingMutexes
+2026-03-26 00:23:03,361 [cuckoo.core.startup] DEBUG: 	 |-- Banload
+2026-03-26 00:23:03,361 [cuckoo.core.startup] DEBUG: 	 |-- Beastdoor
+2026-03-26 00:23:03,361 [cuckoo.core.startup] DEBUG: 	 |-- BeebusMutexes
+2026-03-26 00:23:03,361 [cuckoo.core.startup] DEBUG: 	 |-- BegseabugTDMutexes
+2026-03-26 00:23:03,362 [cuckoo.core.startup] DEBUG: 	 |-- BetabotURL
+2026-03-26 00:23:03,362 [cuckoo.core.startup] DEBUG: 	 |-- Bifrose
+2026-03-26 00:23:03,362 [cuckoo.core.startup] DEBUG: 	 |-- BitcoinOpenCL
+2026-03-26 00:23:03,362 [cuckoo.core.startup] DEBUG: 	 |-- BitcoinWallet
+2026-03-26 00:23:03,362 [cuckoo.core.startup] DEBUG: 	 |-- BitdefenderDetectLibs
+2026-03-26 00:23:03,362 [cuckoo.core.startup] DEBUG: 	 |-- BlackEnergyMutexes
+2026-03-26 00:23:03,362 [cuckoo.core.startup] DEBUG: 	 |-- Blackhole
+2026-03-26 00:23:03,362 [cuckoo.core.startup] DEBUG: 	 |-- BlackholeURL
+2026-03-26 00:23:03,362 [cuckoo.core.startup] DEBUG: 	 |-- Blackice
+2026-03-26 00:23:03,362 [cuckoo.core.startup] DEBUG: 	 |-- BlackposURL
+2026-03-26 00:23:03,362 [cuckoo.core.startup] DEBUG: 	 |-- BlackRevMutexes
+2026-03-26 00:23:03,363 [cuckoo.core.startup] DEBUG: 	 |-- Blackshades
+2026-03-26 00:23:03,363 [cuckoo.core.startup] DEBUG: 	 |-- BladabindiMutexes
+2026-03-26 00:23:03,363 [cuckoo.core.startup] DEBUG: 	 |-- BochsDetectKeys
+2026-03-26 00:23:03,363 [cuckoo.core.startup] DEBUG: 	 |-- Bootkit
+2026-03-26 00:23:03,363 [cuckoo.core.startup] DEBUG: 	 |-- Bottilda
+2026-03-26 00:23:03,363 [cuckoo.core.startup] DEBUG: 	 |-- BozokKey
+2026-03-26 00:23:03,363 [cuckoo.core.startup] DEBUG: 	 |-- browser_startpage
+2026-03-26 00:23:03,363 [cuckoo.core.startup] DEBUG: 	 |-- BrowserSecurity
+2026-03-26 00:23:03,363 [cuckoo.core.startup] DEBUG: 	 |-- BrowserStealer
+2026-03-26 00:23:03,363 [cuckoo.core.startup] DEBUG: 	 |-- Btcbotnet
+2026-03-26 00:23:03,364 [cuckoo.core.startup] DEBUG: 	 |-- Bublik
+2026-03-26 00:23:03,364 [cuckoo.core.startup] DEBUG: 	 |-- BuildLangID
+2026-03-26 00:23:03,364 [cuckoo.core.startup] DEBUG: 	 |-- BuzusMutexes
+2026-03-26 00:23:03,364 [cuckoo.core.startup] DEBUG: 	 |-- BypassFirewall
+2026-03-26 00:23:03,364 [cuckoo.core.startup] DEBUG: 	 |-- c24URL
+2026-03-26 00:23:03,364 [cuckoo.core.startup] DEBUG: 	 |-- CarberpMutexes
+2026-03-26 00:23:03,364 [cuckoo.core.startup] DEBUG: 	 |-- Ceatrg
+2026-03-26 00:23:03,364 [cuckoo.core.startup] DEBUG: 	 |-- ChanitorMutexes
+2026-03-26 00:23:03,364 [cuckoo.core.startup] DEBUG: 	 |-- CheckIP
+2026-03-26 00:23:03,364 [cuckoo.core.startup] DEBUG: 	 |-- ChecksDebugger
+2026-03-26 00:23:03,364 [cuckoo.core.startup] DEBUG: 	 |-- ChecksKernelDebugger
+2026-03-26 00:23:03,364 [cuckoo.core.startup] DEBUG: 	 |-- ClearPermissionEventLogs
+2026-03-26 00:23:03,365 [cuckoo.core.startup] DEBUG: 	 |-- ClearsEventLogs
+2026-03-26 00:23:03,365 [cuckoo.core.startup] DEBUG: 	 |-- ClickfraudCookies
+2026-03-26 00:23:03,365 [cuckoo.core.startup] DEBUG: 	 |-- cloud_mediafire
+2026-03-26 00:23:03,365 [cuckoo.core.startup] DEBUG: 	 |-- cloud_wetransfer
+2026-03-26 00:23:03,365 [cuckoo.core.startup] DEBUG: 	 |-- CloudFlare
+2026-03-26 00:23:03,365 [cuckoo.core.startup] DEBUG: 	 |-- CloudGoogle
+2026-03-26 00:23:03,365 [cuckoo.core.startup] DEBUG: 	 |-- CoinminerMutexes
+2026-03-26 00:23:03,365 [cuckoo.core.startup] DEBUG: 	 |-- ComRAT
+2026-03-26 00:23:03,365 [cuckoo.core.startup] DEBUG: 	 |-- ConsoleOutput
+2026-03-26 00:23:03,365 [cuckoo.core.startup] DEBUG: 	 |-- Crash
+2026-03-26 00:23:03,365 [cuckoo.core.startup] DEBUG: 	 |-- CreatesAutorunInf
+2026-03-26 00:23:03,365 [cuckoo.core.startup] DEBUG: 	 |-- CreatesDocument
+2026-03-26 00:23:03,366 [cuckoo.core.startup] DEBUG: 	 |-- CreatesExe
+2026-03-26 00:23:03,366 [cuckoo.core.startup] DEBUG: 	 |-- CreatesHiddenFile
+2026-03-26 00:23:03,366 [cuckoo.core.startup] DEBUG: 	 |-- CreatesLargeKey
+2026-03-26 00:23:03,366 [cuckoo.core.startup] DEBUG: 	 |-- CreatesNullRegistryEntry
+2026-03-26 00:23:03,366 [cuckoo.core.startup] DEBUG: 	 |-- CreatesService
+2026-03-26 00:23:03,366 [cuckoo.core.startup] DEBUG: 	 |-- CreatesShortcut
+2026-03-26 00:23:03,366 [cuckoo.core.startup] DEBUG: 	 |-- CreatesSuspiciousProcess
+2026-03-26 00:23:03,366 [cuckoo.core.startup] DEBUG: 	 |-- CreatesUserFolderEXE
+2026-03-26 00:23:03,366 [cuckoo.core.startup] DEBUG: 	 |-- CredentialDumpingLsass
+2026-03-26 00:23:03,366 [cuckoo.core.startup] DEBUG: 	 |-- CredentialDumpingLsassAccess
+2026-03-26 00:23:03,366 [cuckoo.core.startup] DEBUG: 	 |-- Cridex
+2026-03-26 00:23:03,366 [cuckoo.core.startup] DEBUG: 	 |-- CryptGenKey
+2026-03-26 00:23:03,367 [cuckoo.core.startup] DEBUG: 	 |-- Cryptolocker
+2026-03-26 00:23:03,367 [cuckoo.core.startup] DEBUG: 	 |-- CryptoMiningStratumCommand
+2026-03-26 00:23:03,367 [cuckoo.core.startup] DEBUG: 	 |-- CuckooDetectFiles
+2026-03-26 00:23:03,367 [cuckoo.core.startup] DEBUG: 	 |-- Cybergate
+2026-03-26 00:23:03,367 [cuckoo.core.startup] DEBUG: 	 |-- Dapato
+2026-03-26 00:23:03,367 [cuckoo.core.startup] DEBUG: 	 |-- Darkcloud
+2026-03-26 00:23:03,367 [cuckoo.core.startup] DEBUG: 	 |-- DarkddosMutexes
+2026-03-26 00:23:03,367 [cuckoo.core.startup] DEBUG: 	 |-- Darkshell
+2026-03-26 00:23:03,367 [cuckoo.core.startup] DEBUG: 	 |-- Ddos556
+2026-03-26 00:23:03,367 [cuckoo.core.startup] DEBUG: 	 |-- Decay
+2026-03-26 00:23:03,367 [cuckoo.core.startup] DEBUG: 	 |-- DecebalMutexes
+2026-03-26 00:23:03,367 [cuckoo.core.startup] DEBUG: 	 |-- DeepFreezeMutex
+2026-03-26 00:23:03,368 [cuckoo.core.startup] DEBUG: 	 |-- DeletesExecutedFiles
+2026-03-26 00:23:03,368 [cuckoo.core.startup] DEBUG: 	 |-- DelfTrojan
+2026-03-26 00:23:03,368 [cuckoo.core.startup] DEBUG: 	 |-- DEPHeapBypass
+2026-03-26 00:23:03,368 [cuckoo.core.startup] DEBUG: 	 |-- DEPStackBypass
+2026-03-26 00:23:03,368 [cuckoo.core.startup] DEBUG: 	 |-- DerusbiMutexes
+2026-03-26 00:23:03,368 [cuckoo.core.startup] DEBUG: 	 |-- Dexter
+2026-03-26 00:23:03,368 [cuckoo.core.startup] DEBUG: 	 |-- Dibik
+2026-03-26 00:23:03,368 [cuckoo.core.startup] DEBUG: 	 |-- DirtJumper
+2026-03-26 00:23:03,368 [cuckoo.core.startup] DEBUG: 	 |-- DisableCmd
+2026-03-26 00:23:03,368 [cuckoo.core.startup] DEBUG: 	 |-- DisableRegedit
+2026-03-26 00:23:03,368 [cuckoo.core.startup] DEBUG: 	 |-- DisablesAppLaunch
+2026-03-26 00:23:03,368 [cuckoo.core.startup] DEBUG: 	 |-- DisablesBrowserWarn
+2026-03-26 00:23:03,369 [cuckoo.core.startup] DEBUG: 	 |-- DisablesIEHTTP2
+2026-03-26 00:23:03,369 [cuckoo.core.startup] DEBUG: 	 |-- DisablesProxy
+2026-03-26 00:23:03,369 [cuckoo.core.startup] DEBUG: 	 |-- DisablesSecurity
+2026-03-26 00:23:03,369 [cuckoo.core.startup] DEBUG: 	 |-- DisablesSPDYChrome
+2026-03-26 00:23:03,369 [cuckoo.core.startup] DEBUG: 	 |-- DisablesSPDYFirefox
+2026-03-26 00:23:03,369 [cuckoo.core.startup] DEBUG: 	 |-- DisablesSPDYIE
+2026-03-26 00:23:03,369 [cuckoo.core.startup] DEBUG: 	 |-- DisablesSystemRestore
+2026-03-26 00:23:03,369 [cuckoo.core.startup] DEBUG: 	 |-- DisablesWER
+2026-03-26 00:23:03,369 [cuckoo.core.startup] DEBUG: 	 |-- DisablesWindowsUpdate
+2026-03-26 00:23:03,369 [cuckoo.core.startup] DEBUG: 	 |-- DisableTaskMgr
+2026-03-26 00:23:03,369 [cuckoo.core.startup] DEBUG: 	 |-- DiskInformation
+2026-03-26 00:23:03,369 [cuckoo.core.startup] DEBUG: 	 |-- Dns_Freehosting_Domain
+2026-03-26 00:23:03,370 [cuckoo.core.startup] DEBUG: 	 |-- dnsserver_dynamic
+2026-03-26 00:23:03,370 [cuckoo.core.startup] DEBUG: 	 |-- DocumentClose
+2026-03-26 00:23:03,370 [cuckoo.core.startup] DEBUG: 	 |-- DocumentOpen
+2026-03-26 00:23:03,370 [cuckoo.core.startup] DEBUG: 	 |-- DoFoil
+2026-03-26 00:23:03,370 [cuckoo.core.startup] DEBUG: 	 |-- DownloaderCabby
+2026-03-26 00:23:03,370 [cuckoo.core.startup] DEBUG: 	 |-- Dridex_APIs
+2026-03-26 00:23:03,370 [cuckoo.core.startup] DEBUG: 	 |-- Drive
+2026-03-26 00:23:03,370 [cuckoo.core.startup] DEBUG: 	 |-- Drive2
+2026-03-26 00:23:03,370 [cuckoo.core.startup] DEBUG: 	 |-- DriverLoad
+2026-03-26 00:23:03,370 [cuckoo.core.startup] DEBUG: 	 |-- DropBox
+2026-03-26 00:23:03,370 [cuckoo.core.startup] DEBUG: 	 |-- Dropper
+2026-03-26 00:23:03,370 [cuckoo.core.startup] DEBUG: 	 |-- Dyreza
+2026-03-26 00:23:03,371 [cuckoo.core.startup] DEBUG: 	 |-- EclipseMutexes
+2026-03-26 00:23:03,371 [cuckoo.core.startup] DEBUG: 	 |-- Emotet
+2026-03-26 00:23:03,371 [cuckoo.core.startup] DEBUG: 	 |-- Emotet_APIs
+2026-03-26 00:23:03,371 [cuckoo.core.startup] DEBUG: 	 |-- Evilbot
+2026-03-26 00:23:03,371 [cuckoo.core.startup] DEBUG: 	 |-- ExcelDataLinks
+2026-03-26 00:23:03,371 [cuckoo.core.startup] DEBUG: 	 |-- ExeAppData
+2026-03-26 00:23:03,371 [cuckoo.core.startup] DEBUG: 	 |-- ExecBitsAdmin
+2026-03-26 00:23:03,371 [cuckoo.core.startup] DEBUG: 	 |-- ExecWaitFor
+2026-03-26 00:23:03,371 [cuckoo.core.startup] DEBUG: 	 |-- exp_3322_dom
+2026-03-26 00:23:03,371 [cuckoo.core.startup] DEBUG: 	 |-- Expiro
+2026-03-26 00:23:03,371 [cuckoo.core.startup] DEBUG: 	 |-- ExploitHeapspray
+2026-03-26 00:23:03,372 [cuckoo.core.startup] DEBUG: 	 |-- ExploitKitMutexes
+2026-03-26 00:23:03,372 [cuckoo.core.startup] DEBUG: 	 |-- FakeAVMutexes
+2026-03-26 00:23:03,372 [cuckoo.core.startup] DEBUG: 	 |-- FakeAVMutexes
+2026-03-26 00:23:03,372 [cuckoo.core.startup] DEBUG: 	 |-- FakeRean
+2026-03-26 00:23:03,372 [cuckoo.core.startup] DEBUG: 	 |-- FarFli
+2026-03-26 00:23:03,372 [cuckoo.core.startup] DEBUG: 	 |-- FesberMutexes
+2026-03-26 00:23:03,372 [cuckoo.core.startup] DEBUG: 	 |-- Fingerprint
+2026-03-26 00:23:03,372 [cuckoo.core.startup] DEBUG: 	 |-- Flame
+2026-03-26 00:23:03,372 [cuckoo.core.startup] DEBUG: 	 |-- Flystudio
+2026-03-26 00:23:03,372 [cuckoo.core.startup] DEBUG: 	 |-- FortinetDetectFiles
+2026-03-26 00:23:03,372 [cuckoo.core.startup] DEBUG: 	 |-- FTPStealer
+2026-03-26 00:23:03,372 [cuckoo.core.startup] DEBUG: 	 |-- Fynloski
+2026-03-26 00:23:03,373 [cuckoo.core.startup] DEBUG: 	 |-- Gaelicum
+2026-03-26 00:23:03,373 [cuckoo.core.startup] DEBUG: 	 |-- Ghostbot
+2026-03-26 00:23:03,373 [cuckoo.core.startup] DEBUG: 	 |-- HasAuthenticode
+2026-03-26 00:23:03,373 [cuckoo.core.startup] DEBUG: 	 |-- HasOfficeEps
+2026-03-26 00:23:03,373 [cuckoo.core.startup] DEBUG: 	 |-- HasPdb
+2026-03-26 00:23:03,373 [cuckoo.core.startup] DEBUG: 	 |-- HasWMI
+2026-03-26 00:23:03,373 [cuckoo.core.startup] DEBUG: 	 |-- Hesperbot
+2026-03-26 00:23:03,373 [cuckoo.core.startup] DEBUG: 	 |-- Hidden_Window
+2026-03-26 00:23:03,373 [cuckoo.core.startup] DEBUG: 	 |-- Hikit
+2026-03-26 00:23:03,373 [cuckoo.core.startup] DEBUG: 	 |-- HookMouse
+2026-03-26 00:23:03,373 [cuckoo.core.startup] DEBUG: 	 |-- Hupigon
+2026-03-26 00:23:03,373 [cuckoo.core.startup] DEBUG: 	 |-- HyperVDetectKeys
+2026-03-26 00:23:03,374 [cuckoo.core.startup] DEBUG: 	 |-- IcePoint
+2026-03-26 00:23:03,374 [cuckoo.core.startup] DEBUG: 	 |-- im_btb
+2026-03-26 00:23:03,374 [cuckoo.core.startup] DEBUG: 	 |-- im_qq
+2026-03-26 00:23:03,374 [cuckoo.core.startup] DEBUG: 	 |-- IMStealer
+2026-03-26 00:23:03,374 [cuckoo.core.startup] DEBUG: 	 |-- InceptionAPT
+2026-03-26 00:23:03,374 [cuckoo.core.startup] DEBUG: 	 |-- Infinity
+2026-03-26 00:23:03,374 [cuckoo.core.startup] DEBUG: 	 |-- InfoStealerClipboard
+2026-03-26 00:23:03,374 [cuckoo.core.startup] DEBUG: 	 |-- InjectionCreateRemoteThread
+2026-03-26 00:23:03,374 [cuckoo.core.startup] DEBUG: 	 |-- InjectionExplorer
+2026-03-26 00:23:03,374 [cuckoo.core.startup] DEBUG: 	 |-- InjectionModifiesMemory
+2026-03-26 00:23:03,374 [cuckoo.core.startup] DEBUG: 	 |-- InjectionNetworkTraffic
+2026-03-26 00:23:03,374 [cuckoo.core.startup] DEBUG: 	 |-- InjectionProcessSearch
+2026-03-26 00:23:03,375 [cuckoo.core.startup] DEBUG: 	 |-- InjectionQueueApcThread
+2026-03-26 00:23:03,375 [cuckoo.core.startup] DEBUG: 	 |-- InjectionRunPE
+2026-03-26 00:23:03,375 [cuckoo.core.startup] DEBUG: 	 |-- InjectionWriteMemory
+2026-03-26 00:23:03,375 [cuckoo.core.startup] DEBUG: 	 |-- InjectionWriteMemoryEXE
+2026-03-26 00:23:03,375 [cuckoo.core.startup] DEBUG: 	 |-- InstalledApps
+2026-03-26 00:23:03,375 [cuckoo.core.startup] DEBUG: 	 |-- InstallsAppInit
+2026-03-26 00:23:03,375 [cuckoo.core.startup] DEBUG: 	 |-- InstallsBHO
+2026-03-26 00:23:03,375 [cuckoo.core.startup] DEBUG: 	 |-- InstallsWinpcap
+2026-03-26 00:23:03,375 [cuckoo.core.startup] DEBUG: 	 |-- IPKillerMutexes
+2026-03-26 00:23:03,375 [cuckoo.core.startup] DEBUG: 	 |-- Ircbrute
+2026-03-26 00:23:03,375 [cuckoo.core.startup] DEBUG: 	 |-- ISRstealerURL
+2026-03-26 00:23:03,375 [cuckoo.core.startup] DEBUG: 	 |-- iStealerURL
+2026-03-26 00:23:03,376 [cuckoo.core.startup] DEBUG: 	 |-- JackPOSFile
+2026-03-26 00:23:03,376 [cuckoo.core.startup] DEBUG: 	 |-- JackposURL
+2026-03-26 00:23:03,376 [cuckoo.core.startup] DEBUG: 	 |-- JavaScriptCommandline
+2026-03-26 00:23:03,376 [cuckoo.core.startup] DEBUG: 	 |-- JeefoMutexes
+2026-03-26 00:23:03,376 [cuckoo.core.startup] DEBUG: 	 |-- Jewdo
+2026-03-26 00:23:03,376 [cuckoo.core.startup] DEBUG: 	 |-- JintorMutexes
+2026-03-26 00:23:03,376 [cuckoo.core.startup] DEBUG: 	 |-- JorikTrojan
+2026-03-26 00:23:03,376 [cuckoo.core.startup] DEBUG: 	 |-- Karagany
+2026-03-26 00:23:03,376 [cuckoo.core.startup] DEBUG: 	 |-- Karakum
+2026-03-26 00:23:03,376 [cuckoo.core.startup] DEBUG: 	 |-- Katusha
+2026-03-26 00:23:03,376 [cuckoo.core.startup] DEBUG: 	 |-- KelihosBot
+2026-03-26 00:23:03,376 [cuckoo.core.startup] DEBUG: 	 |-- Keylogger
+2026-03-26 00:23:03,377 [cuckoo.core.startup] DEBUG: 	 |-- Kilim
+2026-03-26 00:23:03,377 [cuckoo.core.startup] DEBUG: 	 |-- Killdisk
+2026-03-26 00:23:03,377 [cuckoo.core.startup] DEBUG: 	 |-- KnownVirustotal
+2026-03-26 00:23:03,377 [cuckoo.core.startup] DEBUG: 	 |-- Koobface
+2026-03-26 00:23:03,377 [cuckoo.core.startup] DEBUG: 	 |-- Koutodoor
+2026-03-26 00:23:03,377 [cuckoo.core.startup] DEBUG: 	 |-- KovterBot
+2026-03-26 00:23:03,377 [cuckoo.core.startup] DEBUG: 	 |-- KrepperMutexes
+2026-03-26 00:23:03,377 [cuckoo.core.startup] DEBUG: 	 |-- KuluozMutexes
+2026-03-26 00:23:03,377 [cuckoo.core.startup] DEBUG: 	 |-- Likseput
+2026-03-26 00:23:03,377 [cuckoo.core.startup] DEBUG: 	 |-- LocatesBrowser
+2026-03-26 00:23:03,377 [cuckoo.core.startup] DEBUG: 	 |-- LocatesSniffer
+2026-03-26 00:23:03,377 [cuckoo.core.startup] DEBUG: 	 |-- Lockscreen
+2026-03-26 00:23:03,378 [cuckoo.core.startup] DEBUG: 	 |-- LolBot
+2026-03-26 00:23:03,378 [cuckoo.core.startup] DEBUG: 	 |-- Luder
+2026-03-26 00:23:03,378 [cuckoo.core.startup] DEBUG: 	 |-- Madness
+2026-03-26 00:23:03,378 [cuckoo.core.startup] DEBUG: 	 |-- Madness
+2026-03-26 00:23:03,378 [cuckoo.core.startup] DEBUG: 	 |-- MadnessURL
+2026-03-26 00:23:03,378 [cuckoo.core.startup] DEBUG: 	 |-- MaganiaMutexes
+2026-03-26 00:23:03,378 [cuckoo.core.startup] DEBUG: 	 |-- MailStealer
+2026-03-26 00:23:03,378 [cuckoo.core.startup] DEBUG: 	 |-- MaliciousDocumentURLs
+2026-03-26 00:23:03,378 [cuckoo.core.startup] DEBUG: 	 |-- MartianCommandProcess
+2026-03-26 00:23:03,378 [cuckoo.core.startup] DEBUG: 	 |-- MegaUpload
+2026-03-26 00:23:03,378 [cuckoo.core.startup] DEBUG: 	 |-- MemoryAvailable
+2026-03-26 00:23:03,378 [cuckoo.core.startup] DEBUG: 	 |-- MemoryProtectionRX
+2026-03-26 00:23:03,379 [cuckoo.core.startup] DEBUG: 	 |-- MetasploitShellcode
+2026-03-26 00:23:03,379 [cuckoo.core.startup] DEBUG: 	 |-- Minerbot
+2026-03-26 00:23:03,379 [cuckoo.core.startup] DEBUG: 	 |-- miningpool
+2026-03-26 00:23:03,379 [cuckoo.core.startup] DEBUG: 	 |-- MircFile
+2026-03-26 00:23:03,379 [cuckoo.core.startup] DEBUG: 	 |-- ModifiesBootConfig
+2026-03-26 00:23:03,379 [cuckoo.core.startup] DEBUG: 	 |-- ModifiesCertificates
+2026-03-26 00:23:03,379 [cuckoo.core.startup] DEBUG: 	 |-- ModifiesDesktopWallpaper
+2026-03-26 00:23:03,379 [cuckoo.core.startup] DEBUG: 	 |-- ModifiesFirefoxConfiguration
+2026-03-26 00:23:03,379 [cuckoo.core.startup] DEBUG: 	 |-- ModifiesProxyAutoConfig
+2026-03-26 00:23:03,379 [cuckoo.core.startup] DEBUG: 	 |-- ModifiesProxyOverride
+2026-03-26 00:23:03,379 [cuckoo.core.startup] DEBUG: 	 |-- ModifiesProxyWPAD
+2026-03-26 00:23:03,379 [cuckoo.core.startup] DEBUG: 	 |-- ModifiesUACNotify
+2026-03-26 00:23:03,380 [cuckoo.core.startup] DEBUG: 	 |-- ModifySecurityCenterWarnings
+2026-03-26 00:23:03,380 [cuckoo.core.startup] DEBUG: 	 |-- MovesSelf
+2026-03-26 00:23:03,380 [cuckoo.core.startup] DEBUG: 	 |-- Multiple_UA
+2026-03-26 00:23:03,380 [cuckoo.core.startup] DEBUG: 	 |-- MyBot
+2026-03-26 00:23:03,380 [cuckoo.core.startup] DEBUG: 	 |-- Nakbot
+2026-03-26 00:23:03,380 [cuckoo.core.startup] DEBUG: 	 |-- Napolar
+2026-03-26 00:23:03,380 [cuckoo.core.startup] DEBUG: 	 |-- Nebuler
+2026-03-26 00:23:03,380 [cuckoo.core.startup] DEBUG: 	 |-- Netobserve
+2026-03-26 00:23:03,380 [cuckoo.core.startup] DEBUG: 	 |-- Netshadow
+2026-03-26 00:23:03,380 [cuckoo.core.startup] DEBUG: 	 |-- Netwire
+2026-03-26 00:23:03,380 [cuckoo.core.startup] DEBUG: 	 |-- NetworkAdapters
+2026-03-26 00:23:03,380 [cuckoo.core.startup] DEBUG: 	 |-- NetworkDocumentFile
+2026-03-26 00:23:03,381 [cuckoo.core.startup] DEBUG: 	 |-- NetworkEXE
+2026-03-26 00:23:03,381 [cuckoo.core.startup] DEBUG: 	 |-- Nitol
+2026-03-26 00:23:03,381 [cuckoo.core.startup] DEBUG: 	 |-- NjRat
+2026-03-26 00:23:03,381 [cuckoo.core.startup] DEBUG: 	 |-- NtSetContextThreadRemote
+2026-03-26 00:23:03,381 [cuckoo.core.startup] DEBUG: 	 |-- Nymaim_APIs
+2026-03-26 00:23:03,381 [cuckoo.core.startup] DEBUG: 	 |-- ObfusMutexes
+2026-03-26 00:23:03,381 [cuckoo.core.startup] DEBUG: 	 |-- OfficeCheckName
+2026-03-26 00:23:03,381 [cuckoo.core.startup] DEBUG: 	 |-- OfficeCheckProjectName
+2026-03-26 00:23:03,381 [cuckoo.core.startup] DEBUG: 	 |-- OfficeCheckVersion
+2026-03-26 00:23:03,381 [cuckoo.core.startup] DEBUG: 	 |-- OfficeCheckWindow
+2026-03-26 00:23:03,381 [cuckoo.core.startup] DEBUG: 	 |-- OfficeCountDirectories
+2026-03-26 00:23:03,381 [cuckoo.core.startup] DEBUG: 	 |-- OfficeCreateObject
+2026-03-26 00:23:03,382 [cuckoo.core.startup] DEBUG: 	 |-- OfficeDDE
+2026-03-26 00:23:03,382 [cuckoo.core.startup] DEBUG: 	 |-- OfficeEpsStrings
+2026-03-26 00:23:03,382 [cuckoo.core.startup] DEBUG: 	 |-- OfficeHttpRequest
+2026-03-26 00:23:03,382 [cuckoo.core.startup] DEBUG: 	 |-- OfficeIndirectCall
+2026-03-26 00:23:03,382 [cuckoo.core.startup] DEBUG: 	 |-- OfficePackager
+2026-03-26 00:23:03,382 [cuckoo.core.startup] DEBUG: 	 |-- OfficePlatformDetect
+2026-03-26 00:23:03,382 [cuckoo.core.startup] DEBUG: 	 |-- OfficeRecentFiles
+2026-03-26 00:23:03,382 [cuckoo.core.startup] DEBUG: 	 |-- OfficeVulnerableGuid
+2026-03-26 00:23:03,382 [cuckoo.core.startup] DEBUG: 	 |-- OfficeVulnModules
+2026-03-26 00:23:03,382 [cuckoo.core.startup] DEBUG: 	 |-- Oldrea
+2026-03-26 00:23:03,382 [cuckoo.core.startup] DEBUG: 	 |-- PackerEntropy
+2026-03-26 00:23:03,382 [cuckoo.core.startup] DEBUG: 	 |-- Palevo
+2026-03-26 00:23:03,383 [cuckoo.core.startup] DEBUG: 	 |-- ParallelsDetectKeys
+2026-03-26 00:23:03,383 [cuckoo.core.startup] DEBUG: 	 |-- ParallelsDetectWindow
+2026-03-26 00:23:03,383 [cuckoo.core.startup] DEBUG: 	 |-- Pasta
+2026-03-26 00:23:03,383 [cuckoo.core.startup] DEBUG: 	 |-- PcClientMutexes
+2026-03-26 00:23:03,383 [cuckoo.core.startup] DEBUG: 	 |-- PEFeatures
+2026-03-26 00:23:03,383 [cuckoo.core.startup] DEBUG: 	 |-- PEIDPacker
+2026-03-26 00:23:03,383 [cuckoo.core.startup] DEBUG: 	 |-- PerfLogger
+2026-03-26 00:23:03,383 [cuckoo.core.startup] DEBUG: 	 |-- PersistenceBootexecute
+2026-03-26 00:23:03,383 [cuckoo.core.startup] DEBUG: 	 |-- PersistenceRegistryEXE
+2026-03-26 00:23:03,383 [cuckoo.core.startup] DEBUG: 	 |-- PersistenceRegistryJavaScript
+2026-03-26 00:23:03,383 [cuckoo.core.startup] DEBUG: 	 |-- PersistenceRegistryPowershell
+2026-03-26 00:23:03,383 [cuckoo.core.startup] DEBUG: 	 |-- PEUnknownResourceName
+2026-03-26 00:23:03,384 [cuckoo.core.startup] DEBUG: 	 |-- Phorpiex
+2026-03-26 00:23:03,384 [cuckoo.core.startup] DEBUG: 	 |-- Pidief
+2026-03-26 00:23:03,384 [cuckoo.core.startup] DEBUG: 	 |-- Plugx
+2026-03-26 00:23:03,384 [cuckoo.core.startup] DEBUG: 	 |-- Poebot
+2026-03-26 00:23:03,384 [cuckoo.core.startup] DEBUG: 	 |-- PoisonIvy
+2026-03-26 00:23:03,384 [cuckoo.core.startup] DEBUG: 	 |-- Polymorphic
+2026-03-26 00:23:03,384 [cuckoo.core.startup] DEBUG: 	 |-- Ponfoy
+2026-03-26 00:23:03,384 [cuckoo.core.startup] DEBUG: 	 |-- PonyURL
+2026-03-26 00:23:03,384 [cuckoo.core.startup] DEBUG: 	 |-- PosCardStealerURL
+2026-03-26 00:23:03,384 [cuckoo.core.startup] DEBUG: 	 |-- Powerfun
+2026-03-26 00:23:03,384 [cuckoo.core.startup] DEBUG: 	 |-- PowershellBitsTransfer
+2026-03-26 00:23:03,384 [cuckoo.core.startup] DEBUG: 	 |-- PowershellCcDns
+2026-03-26 00:23:03,385 [cuckoo.core.startup] DEBUG: 	 |-- PowershellDdiRc4
+2026-03-26 00:23:03,385 [cuckoo.core.startup] DEBUG: 	 |-- PowershellDFSP
+2026-03-26 00:23:03,385 [cuckoo.core.startup] DEBUG: 	 |-- PowershellDI
+2026-03-26 00:23:03,385 [cuckoo.core.startup] DEBUG: 	 |-- PowershellDownload
+2026-03-26 00:23:03,385 [cuckoo.core.startup] DEBUG: 	 |-- PowershellEmpire
+2026-03-26 00:23:03,385 [cuckoo.core.startup] DEBUG: 	 |-- PowershellMeterpreter
+2026-03-26 00:23:03,385 [cuckoo.core.startup] DEBUG: 	 |-- PowershellRegAdd
+2026-03-26 00:23:03,385 [cuckoo.core.startup] DEBUG: 	 |-- PowershellRequest
+2026-03-26 00:23:03,385 [cuckoo.core.startup] DEBUG: 	 |-- PowershellUnicorn
+2026-03-26 00:23:03,385 [cuckoo.core.startup] DEBUG: 	 |-- Powerworm
+2026-03-26 00:23:03,385 [cuckoo.core.startup] DEBUG: 	 |-- Prinimalka
+2026-03-26 00:23:03,385 [cuckoo.core.startup] DEBUG: 	 |-- PrivilegeLUIDCheck
+2026-03-26 00:23:03,386 [cuckoo.core.startup] DEBUG: 	 |-- ProcessInterest
+2026-03-26 00:23:03,386 [cuckoo.core.startup] DEBUG: 	 |-- ProcessMartian
+2026-03-26 00:23:03,386 [cuckoo.core.startup] DEBUG: 	 |-- ProcessNeeded
+2026-03-26 00:23:03,386 [cuckoo.core.startup] DEBUG: 	 |-- ProcMemDumpIPURLs
+2026-03-26 00:23:03,386 [cuckoo.core.startup] DEBUG: 	 |-- ProcMemDumpTorURLs
+2026-03-26 00:23:03,386 [cuckoo.core.startup] DEBUG: 	 |-- ProcMemDumpURLs
+2026-03-26 00:23:03,386 [cuckoo.core.startup] DEBUG: 	 |-- ProcMemDumpYara
+2026-03-26 00:23:03,386 [cuckoo.core.startup] DEBUG: 	 |-- Psyokym
+2026-03-26 00:23:03,386 [cuckoo.core.startup] DEBUG: 	 |-- PuceMutexes
+2026-03-26 00:23:03,386 [cuckoo.core.startup] DEBUG: 	 |-- PutterpandaMutexes
+2026-03-26 00:23:03,386 [cuckoo.core.startup] DEBUG: 	 |-- Putty
+2026-03-26 00:23:03,386 [cuckoo.core.startup] DEBUG: 	 |-- PWDumpFile
+2026-03-26 00:23:03,387 [cuckoo.core.startup] DEBUG: 	 |-- Pykse
+2026-03-26 00:23:03,387 [cuckoo.core.startup] DEBUG: 	 |-- Qakbot
+2026-03-26 00:23:03,387 [cuckoo.core.startup] DEBUG: 	 |-- QueriesInstalledApps
+2026-03-26 00:23:03,387 [cuckoo.core.startup] DEBUG: 	 |-- Ragebot
+2026-03-26 00:23:03,387 [cuckoo.core.startup] DEBUG: 	 |-- RaisesException
+2026-03-26 00:23:03,387 [cuckoo.core.startup] DEBUG: 	 |-- Ramnit
+2026-03-26 00:23:03,387 [cuckoo.core.startup] DEBUG: 	 |-- RamsomwareFileMoves
+2026-03-26 00:23:03,387 [cuckoo.core.startup] DEBUG: 	 |-- ransomware_viruscoder
+2026-03-26 00:23:03,387 [cuckoo.core.startup] DEBUG: 	 |-- RansomwareAppendsExtension
+2026-03-26 00:23:03,387 [cuckoo.core.startup] DEBUG: 	 |-- RansomwareBcdedit
+2026-03-26 00:23:03,387 [cuckoo.core.startup] DEBUG: 	 |-- RansomwareDroppedFiles
+2026-03-26 00:23:03,387 [cuckoo.core.startup] DEBUG: 	 |-- RansomwareExtensions
+2026-03-26 00:23:03,388 [cuckoo.core.startup] DEBUG: 	 |-- RansomwareFiles
+2026-03-26 00:23:03,388 [cuckoo.core.startup] DEBUG: 	 |-- RansomwareMassFileDelete
+2026-03-26 00:23:03,388 [cuckoo.core.startup] DEBUG: 	 |-- RansomwareMessage
+2026-03-26 00:23:03,388 [cuckoo.core.startup] DEBUG: 	 |-- RansomwareMessageOCR
+2026-03-26 00:23:03,388 [cuckoo.core.startup] DEBUG: 	 |-- RansomwareRecyclebin
+2026-03-26 00:23:03,388 [cuckoo.core.startup] DEBUG: 	 |-- RansomwareShadowcopy
+2026-03-26 00:23:03,388 [cuckoo.core.startup] DEBUG: 	 |-- RansomwareWbadmin
+2026-03-26 00:23:03,388 [cuckoo.core.startup] DEBUG: 	 |-- RapidShare
+2026-03-26 00:23:03,388 [cuckoo.core.startup] DEBUG: 	 |-- rat_fexel_ip
+2026-03-26 00:23:03,388 [cuckoo.core.startup] DEBUG: 	 |-- rat_naid_ip
+2026-03-26 00:23:03,388 [cuckoo.core.startup] DEBUG: 	 |-- RatSiggen
+2026-03-26 00:23:03,388 [cuckoo.core.startup] DEBUG: 	 |-- RBot
+2026-03-26 00:23:03,389 [cuckoo.core.startup] DEBUG: 	 |-- RdpMutexes
+2026-03-26 00:23:03,389 [cuckoo.core.startup] DEBUG: 	 |-- ReadsUserAgent
+2026-03-26 00:23:03,389 [cuckoo.core.startup] DEBUG: 	 |-- Recon_Beacon
+2026-03-26 00:23:03,389 [cuckoo.core.startup] DEBUG: 	 |-- RemovesZoneIdADS
+2026-03-26 00:23:03,389 [cuckoo.core.startup] DEBUG: 	 |-- Renocide
+2026-03-26 00:23:03,389 [cuckoo.core.startup] DEBUG: 	 |-- RenosTrojan
+2026-03-26 00:23:03,389 [cuckoo.core.startup] DEBUG: 	 |-- ResumeThread
+2026-03-26 00:23:03,389 [cuckoo.core.startup] DEBUG: 	 |-- Rovnix
+2026-03-26 00:23:03,389 [cuckoo.core.startup] DEBUG: 	 |-- RTFCharacterSet
+2026-03-26 00:23:03,389 [cuckoo.core.startup] DEBUG: 	 |-- RTFUnknownVersion
+2026-03-26 00:23:03,389 [cuckoo.core.startup] DEBUG: 	 |-- Runbu
+2026-03-26 00:23:03,389 [cuckoo.core.startup] DEBUG: 	 |-- RunouceMutexes
+2026-03-26 00:23:03,390 [cuckoo.core.startup] DEBUG: 	 |-- Ruskill
+2026-03-26 00:23:03,390 [cuckoo.core.startup] DEBUG: 	 |-- Sadbot
+2026-03-26 00:23:03,390 [cuckoo.core.startup] DEBUG: 	 |-- SandboxieDetect
+2026-03-26 00:23:03,390 [cuckoo.core.startup] DEBUG: 	 |-- SandboxJoeAnubisDetectFiles
+2026-03-26 00:23:03,390 [cuckoo.core.startup] DEBUG: 	 |-- SDBot
+2026-03-26 00:23:03,390 [cuckoo.core.startup] DEBUG: 	 |-- SelfDeleteBat
+2026-03-26 00:23:03,390 [cuckoo.core.startup] DEBUG: 	 |-- Senna
+2026-03-26 00:23:03,390 [cuckoo.core.startup] DEBUG: 	 |-- Shadowbot
+2026-03-26 00:23:03,390 [cuckoo.core.startup] DEBUG: 	 |-- SharingRGhost
+2026-03-26 00:23:03,390 [cuckoo.core.startup] DEBUG: 	 |-- SharpStealerURL
+2026-03-26 00:23:03,390 [cuckoo.core.startup] DEBUG: 	 |-- ShellcodeWriteProcessMemory
+2026-03-26 00:23:03,390 [cuckoo.core.startup] DEBUG: 	 |-- Shiz
+2026-03-26 00:23:03,391 [cuckoo.core.startup] DEBUG: 	 |-- Shylock
+2026-03-26 00:23:03,391 [cuckoo.core.startup] DEBUG: 	 |-- SipStun
+2026-03-26 00:23:03,391 [cuckoo.core.startup] DEBUG: 	 |-- Smtp_GMail
+2026-03-26 00:23:03,391 [cuckoo.core.startup] DEBUG: 	 |-- Smtp_Live
+2026-03-26 00:23:03,391 [cuckoo.core.startup] DEBUG: 	 |-- Smtp_Mail_Ru
+2026-03-26 00:23:03,391 [cuckoo.core.startup] DEBUG: 	 |-- Smtp_Yahoo
+2026-03-26 00:23:03,391 [cuckoo.core.startup] DEBUG: 	 |-- SolarURL
+2026-03-26 00:23:03,391 [cuckoo.core.startup] DEBUG: 	 |-- SpyEyeMutexes
+2026-03-26 00:23:03,391 [cuckoo.core.startup] DEBUG: 	 |-- SpyeyeURL
+2026-03-26 00:23:03,391 [cuckoo.core.startup] DEBUG: 	 |-- SpynetRat
+2026-03-26 00:23:03,391 [cuckoo.core.startup] DEBUG: 	 |-- Spyrecorder
+2026-03-26 00:23:03,392 [cuckoo.core.startup] DEBUG: 	 |-- StackPivot
+2026-03-26 00:23:03,392 [cuckoo.core.startup] DEBUG: 	 |-- StackPivotShellcodeAPIs
+2026-03-26 00:23:03,392 [cuckoo.core.startup] DEBUG: 	 |-- StackPivotShellcodeCreateProcess
+2026-03-26 00:23:03,392 [cuckoo.core.startup] DEBUG: 	 |-- Staser
+2026-03-26 00:23:03,392 [cuckoo.core.startup] DEBUG: 	 |-- StealthChildProc
+2026-03-26 00:23:03,392 [cuckoo.core.startup] DEBUG: 	 |-- StealthHiddenExtension
+2026-03-26 00:23:03,392 [cuckoo.core.startup] DEBUG: 	 |-- StealthHiddenFile
+2026-03-26 00:23:03,392 [cuckoo.core.startup] DEBUG: 	 |-- StealthHiddenIcons
+2026-03-26 00:23:03,392 [cuckoo.core.startup] DEBUG: 	 |-- StealthHideNotifications
+2026-03-26 00:23:03,392 [cuckoo.core.startup] DEBUG: 	 |-- StealthSystemProcName
+2026-03-26 00:23:03,392 [cuckoo.core.startup] DEBUG: 	 |-- StopsService
+2026-03-26 00:23:03,392 [cuckoo.core.startup] DEBUG: 	 |-- SunbeltDetectFiles
+2026-03-26 00:23:03,393 [cuckoo.core.startup] DEBUG: 	 |-- SunBeltSandboxDetect
+2026-03-26 00:23:03,393 [cuckoo.core.startup] DEBUG: 	 |-- SuspiciousCommandTools
+2026-03-26 00:23:03,393 [cuckoo.core.startup] DEBUG: 	 |-- SuspiciousPowershell
+2026-03-26 00:23:03,393 [cuckoo.core.startup] DEBUG: 	 |-- SuspiciousWriteEXE
+2026-03-26 00:23:03,393 [cuckoo.core.startup] DEBUG: 	 |-- SweetorangeMutexes
+2026-03-26 00:23:03,393 [cuckoo.core.startup] DEBUG: 	 |-- Swrort
+2026-03-26 00:23:03,393 [cuckoo.core.startup] DEBUG: 	 |-- SysInternalsToolsUsage
+2026-03-26 00:23:03,393 [cuckoo.core.startup] DEBUG: 	 |-- SystemInfo
+2026-03-26 00:23:03,393 [cuckoo.core.startup] DEBUG: 	 |-- SystemMetrics
+2026-03-26 00:23:03,393 [cuckoo.core.startup] DEBUG: 	 |-- TapiDpMutexes
+2026-03-26 00:23:03,393 [cuckoo.core.startup] DEBUG: 	 |-- TDSSBackdoor
+2026-03-26 00:23:03,394 [cuckoo.core.startup] DEBUG: 	 |-- TeamviewerRat
+2026-03-26 00:23:03,394 [cuckoo.core.startup] DEBUG: 	 |-- TerminatesRemoteProcess
+2026-03-26 00:23:03,394 [cuckoo.core.startup] DEBUG: 	 |-- ThreatTrackDetectFiles
+2026-03-26 00:23:03,394 [cuckoo.core.startup] DEBUG: 	 |-- TinbaMutexes
+2026-03-26 00:23:03,394 [cuckoo.core.startup] DEBUG: 	 |-- TnegaMutexes
+2026-03-26 00:23:03,394 [cuckoo.core.startup] DEBUG: 	 |-- Tor
+2026-03-26 00:23:03,394 [cuckoo.core.startup] DEBUG: 	 |-- TorHiddenService
+2026-03-26 00:23:03,394 [cuckoo.core.startup] DEBUG: 	 |-- Travnet
+2026-03-26 00:23:03,394 [cuckoo.core.startup] DEBUG: 	 |-- Trogbot
+2026-03-26 00:23:03,394 [cuckoo.core.startup] DEBUG: 	 |-- TrojanJorik
+2026-03-26 00:23:03,394 [cuckoo.core.startup] DEBUG: 	 |-- TrojanLethic
+2026-03-26 00:23:03,395 [cuckoo.core.startup] DEBUG: 	 |-- TrojanLethic
+2026-03-26 00:23:03,395 [cuckoo.core.startup] DEBUG: 	 |-- trojanmrblack
+2026-03-26 00:23:03,395 [cuckoo.core.startup] DEBUG: 	 |-- TrojanRedosru
+2026-03-26 00:23:03,395 [cuckoo.core.startup] DEBUG: 	 |-- TrojanSysn
+2026-03-26 00:23:03,395 [cuckoo.core.startup] DEBUG: 	 |-- trojanyoddos
+2026-03-26 00:23:03,395 [cuckoo.core.startup] DEBUG: 	 |-- TufikMutexes
+2026-03-26 00:23:03,395 [cuckoo.core.startup] DEBUG: 	 |-- Turkojan
+2026-03-26 00:23:03,395 [cuckoo.core.startup] DEBUG: 	 |-- TurlaCarbon
+2026-03-26 00:23:03,395 [cuckoo.core.startup] DEBUG: 	 |-- UFRStealer
+2026-03-26 00:23:03,395 [cuckoo.core.startup] DEBUG: 	 |-- Unhook
+2026-03-26 00:23:03,395 [cuckoo.core.startup] DEBUG: 	 |-- Upatre
+2026-03-26 00:23:03,396 [cuckoo.core.startup] DEBUG: 	 |-- UpatreTDMutexes
+2026-03-26 00:23:03,396 [cuckoo.core.startup] DEBUG: 	 |-- UPXCompressed
+2026-03-26 00:23:03,396 [cuckoo.core.startup] DEBUG: 	 |-- UrkShortCN
+2026-03-26 00:23:03,396 [cuckoo.core.startup] DEBUG: 	 |-- URLFile
+2026-03-26 00:23:03,396 [cuckoo.core.startup] DEBUG: 	 |-- URLSpy
+2026-03-26 00:23:03,396 [cuckoo.core.startup] DEBUG: 	 |-- UroburosFile
+2026-03-26 00:23:03,396 [cuckoo.core.startup] DEBUG: 	 |-- UroburosMutexes
+2026-03-26 00:23:03,396 [cuckoo.core.startup] DEBUG: 	 |-- Urxbot
+2026-03-26 00:23:03,396 [cuckoo.core.startup] DEBUG: 	 |-- UsesWindowsUtilities
+2026-03-26 00:23:03,396 [cuckoo.core.startup] DEBUG: 	 |-- Vanbot
+2026-03-26 00:23:03,396 [cuckoo.core.startup] DEBUG: 	 |-- VBInject
+2026-03-26 00:23:03,397 [cuckoo.core.startup] DEBUG: 	 |-- VBoxDetectACPI
+2026-03-26 00:23:03,397 [cuckoo.core.startup] DEBUG: 	 |-- VBoxDetectDevices
+2026-03-26 00:23:03,397 [cuckoo.core.startup] DEBUG: 	 |-- VBoxDetectFiles
+2026-03-26 00:23:03,397 [cuckoo.core.startup] DEBUG: 	 |-- VBoxDetectKeys
+2026-03-26 00:23:03,397 [cuckoo.core.startup] DEBUG: 	 |-- VBoxDetectProvname
+2026-03-26 00:23:03,397 [cuckoo.core.startup] DEBUG: 	 |-- VBoxDetectWindow
+2026-03-26 00:23:03,397 [cuckoo.core.startup] DEBUG: 	 |-- Vertex
+2026-03-26 00:23:03,397 [cuckoo.core.startup] DEBUG: 	 |-- VertexSolarURL
+2026-03-26 00:23:03,397 [cuckoo.core.startup] DEBUG: 	 |-- VirtualPCDetect
+2026-03-26 00:23:03,397 [cuckoo.core.startup] DEBUG: 	 |-- VirtualPCDetectWindow
+2026-03-26 00:23:03,397 [cuckoo.core.startup] DEBUG: 	 |-- VirtualPCIllegalInstruction
+2026-03-26 00:23:03,398 [cuckoo.core.startup] DEBUG: 	 |-- Virut
+2026-03-26 00:23:03,398 [cuckoo.core.startup] DEBUG: 	 |-- VMFirmware
+2026-03-26 00:23:03,398 [cuckoo.core.startup] DEBUG: 	 |-- VMPPacked
+2026-03-26 00:23:03,398 [cuckoo.core.startup] DEBUG: 	 |-- VMWareDetectFiles
+2026-03-26 00:23:03,398 [cuckoo.core.startup] DEBUG: 	 |-- VMWareDetectKeys
+2026-03-26 00:23:03,398 [cuckoo.core.startup] DEBUG: 	 |-- VMwareDetectWindow
+2026-03-26 00:23:03,398 [cuckoo.core.startup] DEBUG: 	 |-- VMWareInInstruction
+2026-03-26 00:23:03,398 [cuckoo.core.startup] DEBUG: 	 |-- VncMutexes
+2026-03-26 00:23:03,398 [cuckoo.core.startup] DEBUG: 	 |-- VNLoaderURL
+2026-03-26 00:23:03,398 [cuckoo.core.startup] DEBUG: 	 |-- VolDevicetree1
+2026-03-26 00:23:03,398 [cuckoo.core.startup] DEBUG: 	 |-- VolHandles1
+2026-03-26 00:23:03,398 [cuckoo.core.startup] DEBUG: 	 |-- VolLdrModules1
+2026-03-26 00:23:03,399 [cuckoo.core.startup] DEBUG: 	 |-- VolLdrModules2
+2026-03-26 00:23:03,399 [cuckoo.core.startup] DEBUG: 	 |-- VolMalfind1
+2026-03-26 00:23:03,399 [cuckoo.core.startup] DEBUG: 	 |-- VolModscan1
+2026-03-26 00:23:03,399 [cuckoo.core.startup] DEBUG: 	 |-- VolSvcscan1
+2026-03-26 00:23:03,399 [cuckoo.core.startup] DEBUG: 	 |-- VolSvcscan2
+2026-03-26 00:23:03,399 [cuckoo.core.startup] DEBUG: 	 |-- VolSvcscan3
+2026-03-26 00:23:03,399 [cuckoo.core.startup] DEBUG: 	 |-- VPCDetectKeys
+2026-03-26 00:23:03,399 [cuckoo.core.startup] DEBUG: 	 |-- Wakbot
+2026-03-26 00:23:03,399 [cuckoo.core.startup] DEBUG: 	 |-- WarbotURL
+2026-03-26 00:23:03,399 [cuckoo.core.startup] DEBUG: 	 |-- Whimoo
+2026-03-26 00:23:03,399 [cuckoo.core.startup] DEBUG: 	 |-- Win32ProcessCreate
+2026-03-26 00:23:03,399 [cuckoo.core.startup] DEBUG: 	 |-- WineDetect
+2026-03-26 00:23:03,400 [cuckoo.core.startup] DEBUG: 	 |-- WinSCP
+2026-03-26 00:23:03,400 [cuckoo.core.startup] DEBUG: 	 |-- WinSxsBot
+2026-03-26 00:23:03,400 [cuckoo.core.startup] DEBUG: 	 |-- WMIAntiVM
+2026-03-26 00:23:03,400 [cuckoo.core.startup] DEBUG: 	 |-- WMIPersistance
+2026-03-26 00:23:03,400 [cuckoo.core.startup] DEBUG: 	 |-- WMIService
+2026-03-26 00:23:03,400 [cuckoo.core.startup] DEBUG: 	 |-- WormAllaple
+2026-03-26 00:23:03,400 [cuckoo.core.startup] DEBUG: 	 |-- WormKolabc
+2026-03-26 00:23:03,400 [cuckoo.core.startup] DEBUG: 	 |-- XenDetectKeys
+2026-03-26 00:23:03,400 [cuckoo.core.startup] DEBUG: 	 |-- XtremeRAT
+2026-03-26 00:23:03,400 [cuckoo.core.startup] DEBUG: 	 |-- Xworm
+2026-03-26 00:23:03,400 [cuckoo.core.startup] DEBUG: 	 |-- Zegost
+2026-03-26 00:23:03,400 [cuckoo.core.startup] DEBUG: 	 |-- ZeusMutexes
+2026-03-26 00:23:03,401 [cuckoo.core.startup] DEBUG: 	 |-- ZeusP2P
+2026-03-26 00:23:03,401 [cuckoo.core.startup] DEBUG: 	 |-- ZeusURL
+2026-03-26 00:23:03,401 [cuckoo.core.startup] DEBUG: 	 `-- ZoneID
+2026-03-26 00:23:03,401 [cuckoo.core.startup] DEBUG: Imported "reporting" modules:
+2026-03-26 00:23:03,401 [cuckoo.core.startup] DEBUG: 	 |-- ElasticSearch
+2026-03-26 00:23:03,401 [cuckoo.core.startup] DEBUG: 	 |-- Feedback
+2026-03-26 00:23:03,401 [cuckoo.core.startup] DEBUG: 	 |-- JsonDump
+2026-03-26 00:23:03,401 [cuckoo.core.startup] DEBUG: 	 |-- Mattermost
+2026-03-26 00:23:03,401 [cuckoo.core.startup] DEBUG: 	 |-- MISP
+2026-03-26 00:23:03,401 [cuckoo.core.startup] DEBUG: 	 |-- Moloch
+2026-03-26 00:23:03,401 [cuckoo.core.startup] DEBUG: 	 |-- MongoDB
+2026-03-26 00:23:03,401 [cuckoo.core.startup] DEBUG: 	 |-- Notification
+2026-03-26 00:23:03,402 [cuckoo.core.startup] DEBUG: 	 `-- SingleFile
+2026-03-26 00:23:03,410 [cuckoo.core.startup] DEBUG: Checking for locked tasks..
+2026-03-26 00:23:03,418 [cuckoo.core.startup] DEBUG: Checking for pending service tasks..
+2026-03-26 00:23:03,422 [cuckoo.core.startup] DEBUG: Initializing Yara...
+2026-03-26 00:23:03,425 [cuckoo.core.startup] DEBUG: 	 |-- binaries embedded.yar
+2026-03-26 00:23:03,425 [cuckoo.core.startup] DEBUG: 	 |-- binaries filetypes.yar
+2026-03-26 00:23:03,425 [cuckoo.core.startup] DEBUG: 	 |-- binaries shellcodes.yar
+2026-03-26 00:23:03,425 [cuckoo.core.startup] DEBUG: 	 |-- binaries vmdetect.yar
+2026-03-26 00:23:03,428 [cuckoo.core.startup] DEBUG: 	 |-- scripts applocker_bypass.yar
+2026-03-26 00:23:03,428 [cuckoo.core.startup] DEBUG: 	 |-- scripts powerfun.yar
+2026-03-26 00:23:03,428 [cuckoo.core.startup] DEBUG: 	 |-- scripts powershell_AMSI.yar
+2026-03-26 00:23:03,429 [cuckoo.core.startup] DEBUG: 	 |-- scripts powershell_BITS_transfer.yar
+2026-03-26 00:23:03,429 [cuckoo.core.startup] DEBUG: 	 |-- scripts powershell_ddi_rc4.yar
+2026-03-26 00:23:03,429 [cuckoo.core.startup] DEBUG: 	 |-- scripts powershell_dfsp.yar
+2026-03-26 00:23:03,429 [cuckoo.core.startup] DEBUG: 	 |-- scripts powershell_di.yar
+2026-03-26 00:23:03,429 [cuckoo.core.startup] DEBUG: 	 |-- scripts powershell_empire.yar
+2026-03-26 00:23:03,429 [cuckoo.core.startup] DEBUG: 	 |-- scripts powershell_meterpreter.yar
+2026-03-26 00:23:03,429 [cuckoo.core.startup] DEBUG: 	 |-- scripts powershell_txt_c2.yar
+2026-03-26 00:23:03,429 [cuckoo.core.startup] DEBUG: 	 |-- scripts powershell_unicorn.yar
+2026-03-26 00:23:03,429 [cuckoo.core.startup] DEBUG: 	 |-- scripts powerworm.yar
+2026-03-26 00:23:03,430 [cuckoo.core.startup] DEBUG: 	 |-- shellcode metasploit.yar
+2026-03-26 00:23:03,431 [cuckoo.core.startup] DEBUG: 	 |-- office dde.yar
+2026-03-26 00:23:03,431 [cuckoo.core.startup] DEBUG: 	 |-- office ole.yar
+2026-03-26 00:23:03,433 [cuckoo.core.scheduler] INFO: Using "virtualbox" as machine manager
+2026-03-26 00:23:03,678 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine cuckoo1 to Snapshot1
+2026-03-26 00:23:03,773 [cuckoo.core.scheduler] INFO: Loaded 1 machine/s
+2026-03-26 00:23:03,781 [cuckoo.core.scheduler] INFO: Waiting for analysis tasks.
+2026-03-26 00:24:32,736 [cuckoo.core.scheduler] DEBUG: Processing task #1
+2026-03-26 00:24:32,743 [cuckoo.core.scheduler] INFO: Starting analysis of FILE "e9d3a58d421ecd9c8c57f7220c4ee420e52bf449194d35b367aa45c863bd0f66.exe" (task #1, options "procmemdump=yes,route=none")
+2026-03-26 00:24:32,778 [cuckoo.core.scheduler] INFO: Task #1: acquired machine cuckoo1 (label=cuckoo1)
+2026-03-26 00:24:32,779 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.56.101 for task #1
+2026-03-26 00:24:32,780 [cuckoo.core.plugins] DEBUG: Started auxiliary module: Replay
+2026-03-26 00:24:32,788 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 28736 (interface=vboxnet0, host=192.168.56.101)
+2026-03-26 00:24:32,788 [cuckoo.core.plugins] DEBUG: Started auxiliary module: Sniffer
+2026-03-26 00:24:32,820 [cuckoo.machinery.virtualbox] DEBUG: Starting vm cuckoo1
+2026-03-26 00:24:32,928 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine cuckoo1 to Snapshot1
+2026-03-26 00:24:35,711 [cuckoo.core.guest] INFO: Starting analysis #1 on guest (id=cuckoo1, ip=192.168.56.101)
+2026-03-26 00:24:36,715 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2026-03-26 00:24:37,721 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2026-03-26 00:24:38,726 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2026-03-26 00:24:39,731 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2026-03-26 00:24:39,744 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=cuckoo1, ip=192.168.56.101)
+2026-03-26 00:24:39,765 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=cuckoo1, ip=192.168.56.101, monitor=latest, size=3884763)
+2026-03-26 00:24:40,151 [cuckoo.core.resultserver] DEBUG: Task #1: live log analysis.log initialized.
+2026-03-26 00:24:40,692 [cuckoo.core.resultserver] DEBUG: Task #1 is sending a BSON stream
+2026-03-26 00:24:40,923 [cuckoo.core.resultserver] DEBUG: Task #1 is sending a BSON stream
+2026-03-26 00:24:41,428 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'files/a587eef8b6be5fae_PHFHG.txt'
+2026-03-26 00:24:41,429 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 136
+2026-03-26 00:24:42,412 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'memory/1872-1.dmp'
+2026-03-26 00:24:42,421 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 2970104
+2026-03-26 00:24:42,505 [cuckoo.core.resultserver] DEBUG: Task #1 is sending a BSON stream
+2026-03-26 00:24:42,705 [cuckoo.core.resultserver] DEBUG: Task #1 is sending a BSON stream
+2026-03-26 00:24:42,922 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'memory/2132-1.dmp'
+2026-03-26 00:24:42,955 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 16854544
+2026-03-26 00:24:43,031 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'memory/1872-2.dmp'
+2026-03-26 00:24:43,077 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 19566216
+2026-03-26 00:24:43,163 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'files/9de54e2f690f81c6_mcsft.txt'
+2026-03-26 00:24:43,166 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 572584
+2026-03-26 00:24:43,342 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'memory/2228-1.dmp'
+2026-03-26 00:24:43,355 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 5587400
+2026-03-26 00:24:43,434 [cuckoo.core.resultserver] DEBUG: Task #1 is sending a BSON stream
+2026-03-26 00:24:43,761 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'memory/2324-1.dmp'
+2026-03-26 00:24:43,767 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 2363800
+2026-03-26 00:24:43,846 [cuckoo.core.resultserver] DEBUG: Task #1 is sending a BSON stream
+2026-03-26 00:24:43,913 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'memory/2228-2.dmp'
+2026-03-26 00:24:43,964 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 25137064
+2026-03-26 00:24:44,471 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'memory/1172-1.dmp'
+2026-03-26 00:24:44,557 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 49928384
+2026-03-26 00:24:45,088 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:24:50,133 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:24:55,179 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:25:00,225 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:25:05,271 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:25:10,319 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:25:15,366 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:25:20,411 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:25:25,457 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:25:30,501 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:25:35,549 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:25:40,593 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:25:45,640 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:25:50,686 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:25:55,730 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:26:00,779 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:26:05,831 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:26:10,881 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:26:15,927 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:26:20,975 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:26:26,023 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:26:31,070 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:26:36,117 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2026-03-26 00:26:40,713 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'memory/2324-2.dmp'
+2026-03-26 00:26:40,848 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 72234440
+2026-03-26 00:26:41,161 [cuckoo.core.guest] INFO: cuckoo1: analysis completed successfully
+2026-03-26 00:26:41,171 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Replay
+2026-03-26 00:26:41,235 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2026-03-26 00:26:47,946 [cuckoo.machinery.virtualbox] INFO: Successfully generated memory dump for virtual machine with label cuckoo1 to path /home/van/.cuckoo/storage/analyses/1/memory.dmp
+2026-03-26 00:26:47,947 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm cuckoo1
+2026-03-26 00:26:48,094 [cuckoo.core.resultserver] DEBUG: Task #1 had connection reset for <Context for LOG>
+2026-03-26 00:26:49,165 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.56.101 for task #1
+2026-03-26 00:26:49,179 [cuckoo.core.scheduler] DEBUG: Released database task #1
+2026-03-26 00:26:49,209 [cuckoo.core.plugins] DEBUG: Executed processing module "AnalysisInfo" for task #1
+2026-03-26 00:26:49,369 [cuckoo.common.scripting] WARNING: Error parsing command-line: cmd /c ""C:\Users\cuckoo\AppData\Local\Temp\PHFHG.bat" "
+2026-03-26 00:26:49,383 [cuckoo.core.plugins] DEBUG: Executed processing module "BehaviorAnalysis" for task #1
+2026-03-26 00:26:49,406 [cuckoo.core.plugins] DEBUG: Executed processing module "Dropped" for task #1
+2026-03-26 00:26:49,413 [cuckoo.core.plugins] DEBUG: Executed processing module "DroppedBuffer" for task #1
+2026-03-26 00:26:51,177 [cuckoo.core.plugins] DEBUG: Executed processing module "MetaInfo" for task #1
+2026-03-26 00:26:52,687 [cuckoo.core.plugins] DEBUG: Executed processing module "ProcessMemory" for task #1
+2026-03-26 00:26:52,687 [cuckoo.core.plugins] DEBUG: Executed processing module "Procmon" for task #1
+2026-03-26 00:26:52,688 [cuckoo.core.plugins] DEBUG: Executed processing module "Screenshots" for task #1
+2026-03-26 00:26:53,023 [cuckoo.core.plugins] DEBUG: Executed processing module "Static" for task #1
+2026-03-26 00:26:53,067 [cuckoo.core.plugins] DEBUG: Executed processing module "Strings" for task #1
+2026-03-26 00:26:53,092 [cuckoo.core.plugins] DEBUG: Executed processing module "TargetInfo" for task #1
+2026-03-26 00:26:53,289 [cuckoo.core.plugins] DEBUG: Executed processing module "NetworkAnalysis" for task #1
+2026-03-26 00:26:53,290 [cuckoo.core.plugins] DEBUG: Executed processing module "Extracted" for task #1
+2026-03-26 00:26:53,290 [cuckoo.core.plugins] DEBUG: Executed processing module "TLSMasterSecrets" for task #1
+2026-03-26 00:26:53,295 [cuckoo.core.plugins] DEBUG: Executed processing module "Debug" for task #1
+2026-03-26 00:26:53,331 [cuckoo.core.plugins] DEBUG: Running 542 signatures
+2026-03-26 00:26:54,869 [cuckoo.core.plugins] DEBUG: Analysis matched signature: dumped_buffer
+2026-03-26 00:26:54,872 [cuckoo.core.plugins] DEBUG: Analysis matched signature: dumped_buffer2
+2026-03-26 00:26:54,872 [cuckoo.core.plugins] DEBUG: Analysis matched signature: networkdyndns_checkip
+2026-03-26 00:26:54,872 [cuckoo.core.plugins] DEBUG: Analysis matched signature: allocates_execute_remote_process
+2026-03-26 00:26:54,872 [cuckoo.core.plugins] DEBUG: Analysis matched signature: allocates_rwx
+2026-03-26 00:26:54,873 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antisandbox_sleep
+2026-03-26 00:26:54,873 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_queries_computername
+2026-03-26 00:26:54,873 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_generic_cpu
+2026-03-26 00:26:54,873 [cuckoo.core.plugins] DEBUG: Analysis matched signature: persistence_autorun
+2026-03-26 00:26:54,873 [cuckoo.core.plugins] DEBUG: Analysis matched signature: console_output
+2026-03-26 00:26:54,873 [cuckoo.core.plugins] DEBUG: Analysis matched signature: exe_appdata
+2026-03-26 00:26:54,874 [cuckoo.core.plugins] DEBUG: Analysis matched signature: recon_fingerprint
+2026-03-26 00:26:54,874 [cuckoo.core.plugins] DEBUG: Analysis matched signature: rat_fynloski
+2026-03-26 00:26:54,874 [cuckoo.core.plugins] DEBUG: Analysis matched signature: stealth_window
+2026-03-26 00:26:54,874 [cuckoo.core.plugins] DEBUG: Analysis matched signature: injection_runpe
+2026-03-26 00:26:54,874 [cuckoo.core.plugins] DEBUG: Analysis matched signature: infostealer_keylogger
+2026-03-26 00:26:54,874 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_memory_available
+2026-03-26 00:26:54,875 [cuckoo.core.plugins] DEBUG: Analysis matched signature: protection_rx
+2026-03-26 00:26:54,875 [cuckoo.core.plugins] DEBUG: Analysis matched signature: injection_ntsetcontextthread
+2026-03-26 00:26:54,875 [cuckoo.core.plugins] DEBUG: Analysis matched signature: packer_entropy
+2026-03-26 00:26:54,875 [cuckoo.core.plugins] DEBUG: Analysis matched signature: privilege_luid_check
+2026-03-26 00:26:54,875 [cuckoo.core.plugins] DEBUG: Analysis matched signature: memdump_ip_urls
+2026-03-26 00:26:54,875 [cuckoo.core.plugins] DEBUG: Analysis matched signature: memdump_urls
+2026-03-26 00:26:54,876 [cuckoo.core.plugins] DEBUG: Analysis matched signature: raises_exception
+2026-03-26 00:26:54,876 [cuckoo.core.plugins] DEBUG: Analysis matched signature: injection_resumethread
+2026-03-26 00:26:54,876 [cuckoo.core.plugins] DEBUG: Analysis matched signature: packer_upx
+2026-03-26 00:26:54,876 [cuckoo.core.plugins] DEBUG: Analysis matched signature: uses_windows_utilities
+2026-03-26 00:26:55,718 [cuckoo.core.plugins] DEBUG: Executed reporting module "JsonDump"
+2026-03-26 00:26:55,770 [cuckoo.core.plugins] DEBUG: Executed reporting module "SingleFile"
+2026-03-26 00:26:56,206 [cuckoo.core.plugins] DEBUG: Executed reporting module "MongoDB"
+2026-03-26 00:26:56,206 [cuckoo.core.scheduler] INFO: Task #1: reports generation completed
+2026-03-26 00:26:56,213 [cuckoo.core.scheduler] INFO: Task #1: analysis procedure completed
